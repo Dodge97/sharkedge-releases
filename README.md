@@ -8,7 +8,7 @@
 
 ## Installation
 
-1. Go to the [Releases page](https://github.com/Dodge97/betmgm-bot/releases/latest)
+1. Go to the [Releases page](https://github.com/Dodge97/betmgm-bot-releases/releases/latest)
 2. Download **`BetMGM-Bot-Setup.exe`**
 3. Double-click the installer → Next → Install → Finish
 4. The app starts automatically — a green **B** icon appears in your system tray (bottom-right of your taskbar)
