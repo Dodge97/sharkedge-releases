@@ -50,18 +50,18 @@ After completing the wizard, Aera starts automatically.
 
 Once set up, Aera runs quietly in the background. Here's what you need to know:
 
-- **Starting the bot**: Right-click the tray/menu bar icon → **Start**, or open the Dashboard and click **Start**
+- **Starting Aera**: Right-click the tray/menu bar icon → **Start**, or open the Dashboard and click **Start**
 - **Opening the Dashboard**: Right-click the icon → **Dashboard**, or go to `http://127.0.0.1:8095` in your browser
 - **What you'll see**: Your bets, profit, win rate, and charts — all updated in real time
 - **Settings**: Change your bankroll, max odds, or login credentials at any time
-- **How It Works**: A step-by-step explanation of the bot's process is available from the navigation bar
+- **How It Works**: A step-by-step explanation of Aera's process is available from the navigation bar
 - **Billing**: View your fee balance, payment history, and referral earnings
 
 ### Pricing
 
-Free to start — your first €50 in performance fees are waived. After that, a 40% fee applies only on new profit (you never pay on losses).
+Free to start — your first €50 in profit is completely fee-free. After that, a 40% fee applies only on new profit above your previous peak (you never pay on losses).
 
-When your accumulated fee reaches €100, a **Pay Now** banner appears in your dashboard. You have 24 hours to pay via the secure Stripe checkout. If not paid within 24 hours, the bot pauses until the fee is settled. After payment, the bot resumes automatically.
+When your accumulated fee reaches €50, a **Pay Now** banner appears in your dashboard. You have 24 hours to pay via the secure Stripe checkout. If not paid within 24 hours, Aera pauses until the fee is settled. After payment, Aera resumes automatically.
 
 ---
 
@@ -81,9 +81,12 @@ When a new version is available, a yellow banner appears in your dashboard:
 |---------|----------|
 | **No tray icon visible** | **Windows:** Click the **^** arrow in your taskbar to find hidden icons. **Mac:** Look for the icon in the top-right menu bar. |
 | **Browser doesn't open automatically** | Open your browser and go to `http://127.0.0.1:8095` |
-| **"Connection refused" in browser** | Make sure Aera is running — check for the tray/menu bar icon |
-| **Bot says "Stopped" but won't start** | Try quitting and reopening the app |
+| **"Connection refused" in browser** | Make sure Aera is running — check for the tray/menu bar icon. If you just installed, wait a few seconds and refresh the page. |
+| **Aera says "Stopped" but won't start** | Try quitting and reopening the app |
 | **Forgot your PIN** | See "Resetting your PIN" below |
+| **Windows: "Windows protected your PC"** | This is Windows SmartScreen. Click **More info** → **Run anyway**. This warning appears because the app is new and not yet widely installed — it is safe to proceed. |
+| **Windows: "Error opening file"** | Save the installer to your Downloads folder first, then run it from there. Some browsers block running installers directly from the download bar. |
+| **macOS: "not supported on this Mac"** | Make sure you have the latest version. Update to the newest release from the [releases page](https://github.com/Dodge97/aera-releases/releases/latest). |
 
 ### Resetting your PIN
 
@@ -97,4 +100,7 @@ On the login page, click **"Forgot your PIN?"** and enter the email address link
 
 **macOS:** Drag the app from Applications to the Trash.
 
-Your betting data is preserved after uninstalling. To remove everything, also delete the data folder (see paths above).
+Your betting data is preserved after uninstalling. To remove everything, also delete the data folder:
+
+- **Windows:** `%APPDATA%\Aera\`
+- **macOS:** `~/Library/Application Support/Aera/`
