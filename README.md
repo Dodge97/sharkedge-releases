@@ -4,7 +4,6 @@
 
 - A **Windows** PC (Windows 10 or later) or a **Mac** (macOS 12 or later)
 - A bookmaker account with email and password
-- Your personal activation code (`AERA-XXXXXX`) — you'll receive this separately
 
 ---
 
@@ -33,16 +32,15 @@
 
 ## Step 2: Setup Wizard
 
-When you first open Aera, a setup wizard guides you through six steps:
+When you first open Aera, a setup wizard guides you through five steps:
 
 1. **Welcome** — a quick overview of how the app works
 2. **User Agreement** — read and accept the terms of service
-3. **Activation Code** — enter the `AERA-XXXXXX` code you received to connect to our signal service
-4. **Bookmaker Login** — enter your bookmaker email and password. These are stored securely on your device and are never sent to our servers. You can use the **Test Connection** button to verify your credentials before continuing.
-5. **Bankroll** — enter your current bookmaker account balance. Aera uses this to automatically calculate the right bet size for each bet using a proven mathematical formula for long-term growth.
-6. **PIN** — choose a code (at least 4 characters) to protect your dashboard
+3. **Bookmaker Login** — enter your bookmaker email and password. These are stored securely on your device and are never sent to our servers. You can use the **Test Connection** button to verify your credentials before continuing. If you have a referral code, you can enter it here too.
+4. **Bankroll** — enter your current bookmaker account balance. Aera uses this to automatically calculate the right bet size for each bet using a proven mathematical formula for long-term growth.
+5. **PIN** — choose a code (at least 4 characters) to protect your dashboard
 
-After completing the wizard, Aera starts automatically.
+After completing the wizard, Aera connects to our signal service automatically and starts running.
 
 ---
 
@@ -84,6 +82,7 @@ When a new version is available, a yellow banner appears in your dashboard:
 | **"Connection refused" in browser** | Make sure Aera is running — check for the tray/menu bar icon. If you just installed, wait a few seconds and refresh the page. |
 | **Aera says "Stopped" but won't start** | Try quitting and reopening the app |
 | **Forgot your PIN** | See "Resetting your PIN" below |
+| **"Registration is currently closed"** | Contact the operator — new registrations may be temporarily paused. |
 | **Windows: "Windows protected your PC"** | This is Windows SmartScreen. Click **More info** → **Run anyway**. This warning appears because the app is new and not yet widely installed — it is safe to proceed. |
 | **Windows: "Error opening file"** | Save the installer to your Downloads folder first, then run it from there. Some browsers block running installers directly from the download bar. |
 | **macOS: "not supported on this Mac"** | Make sure you have the latest version. Update to the newest release from the [releases page](https://github.com/Dodge97/aera-releases/releases/latest). |
