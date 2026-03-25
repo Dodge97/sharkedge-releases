@@ -1,56 +1,100 @@
-# BetMGM Bot — Installation Guide
+# Aera — Installation Guide
 
 ## What you need
 
-- A Windows PC (Windows 10 or later)
-- A BetMGM.nl account (email + password)
-- A Relay API key (you'll receive this separately)
+- A **Windows** PC (Windows 10 or later) or a **Mac** (macOS 12 or later)
+- A bookmaker account with email and password
+- Your personal activation code (`AERA-XXXXXX`) — you'll receive this separately
 
-## Installation
+---
 
-1. Go to the [Releases page](https://github.com/Dodge97/betmgm-bot-releases/releases/latest)
-2. Download **`BetMGM-Bot-Setup.exe`**
-3. Double-click the installer → Next → Install → Finish
-4. The app starts automatically — a green **B** icon appears in your system tray (bottom-right of your taskbar)
-5. Your browser opens the setup wizard at `http://127.0.0.1:8095`
+## Step 1: Download & Install
 
-## Setup wizard
+### Windows
 
-The wizard walks you through 4 steps:
+1. Go to the [latest release](https://github.com/Dodge97/aera-releases/releases/latest)
+2. Download **`Aera-Setup.exe`**
+3. Double-click the installer and follow the steps (Next → Install → Finish)
+4. The app starts automatically — a small icon appears in your **system tray** (bottom-right corner of your taskbar, near the clock)
+5. Your browser opens the setup wizard
 
-1. **PIN** — choose a 4-6 digit code to protect your dashboard
-2. **BetMGM credentials** — your BetMGM.nl email and password
-3. **Relay API key** — paste the key you received
-4. **Stake** — your default bet amount (e.g. €1.00)
+> **Don't see the icon?** Click the small **^** arrow in your taskbar to reveal hidden icons.
 
-After completing the wizard, the bot starts running in the background.
+### macOS
 
-## Using the bot
+1. Go to the [latest release](https://github.com/Dodge97/aera-releases/releases/latest)
+2. Download **`Aera.dmg`**
+3. Open the DMG file and drag the Aera app into your **Applications** folder
+4. Open Aera from your Applications folder
+5. If macOS shows a security warning, go to **System Settings → Privacy & Security** and click **Open Anyway**
+6. A menu bar icon appears (top-right of your screen) and your browser opens the setup wizard
 
-- The green **B** icon in your system tray shows the bot is running
-- **Right-click** the icon → Dashboard to open the web interface
-- The dashboard shows your bets, P&L, win rate, and charts
-- Use **Settings** to change your stake or switch between dry-run and live mode
+---
 
-> **Note:** The bot starts in **dry-run mode** by default — it logs bets without actually placing them. Switch to **live mode** in Settings when you're ready.
+## Step 2: Setup Wizard
+
+When you first open Aera, a setup wizard guides you through six steps:
+
+1. **Welcome** — a quick overview of how the app works
+2. **User Agreement** — read and accept the terms of service
+3. **Activation Code** — enter the `AERA-XXXXXX` code you received to connect to our signal service
+4. **Bookmaker Login** — enter your bookmaker email and password. These are stored securely on your device and are never sent to our servers. You can use the **Test Connection** button to verify your credentials before continuing.
+5. **Bankroll** — enter your current bookmaker account balance. Aera uses this to automatically calculate the right bet size for each bet using a proven mathematical formula for long-term growth.
+6. **PIN** — choose a code (at least 4 characters) to protect your dashboard
+
+After completing the wizard, Aera starts automatically.
+
+---
+
+## Step 3: Using the App
+
+Once set up, Aera runs quietly in the background. Here's what you need to know:
+
+- **Starting the bot**: Right-click the tray/menu bar icon → **Start**, or open the Dashboard and click **Start**
+- **Opening the Dashboard**: Right-click the icon → **Dashboard**, or go to `http://127.0.0.1:8095` in your browser
+- **What you'll see**: Your bets, profit, win rate, and charts — all updated in real time
+- **Settings**: Change your bankroll, max odds, or login credentials at any time
+- **How It Works**: A step-by-step explanation of the bot's process is available from the navigation bar
+- **Billing**: View your fee balance, payment history, and referral earnings
+
+### Pricing
+
+Free to start — your first €50 in performance fees are waived. After that, a 40% fee applies only on new profit (you never pay on losses).
+
+When your accumulated fee reaches €100, a **Pay Now** banner appears in your dashboard. You have 24 hours to pay via the secure Stripe checkout. If not paid within 24 hours, the bot pauses until the fee is settled. After payment, the bot resumes automatically.
+
+---
 
 ## Updates
 
-When a new version is available, a yellow banner appears at the top of your dashboard:
+When a new version is available, a yellow banner appears in your dashboard:
 
-1. Click **Download** — the installer downloads to your Downloads folder
-2. Close the bot (right-click tray icon → Quit)
-3. Run the new installer — your settings and data are preserved
+1. Click **Download** — the installer saves to your Downloads folder
+2. Close the app (right-click tray/menu bar icon → **Quit**)
+3. Run the new installer — your settings and data are kept
+
+---
 
 ## Troubleshooting
 
 | Problem | Solution |
 |---------|----------|
-| No tray icon visible | Click the **^** arrow in your taskbar to find hidden icons |
-| Browser doesn't open | Go to `http://127.0.0.1:8095` manually |
-| "Connection refused" | Make sure the bot is running (check tray icon) |
-| Forgot your PIN | Delete `%APPDATA%\BetMGM-Bot\bets.db` and restart (this resets all data) |
+| **No tray icon visible** | **Windows:** Click the **^** arrow in your taskbar to find hidden icons. **Mac:** Look for the icon in the top-right menu bar. |
+| **Browser doesn't open automatically** | Open your browser and go to `http://127.0.0.1:8095` |
+| **"Connection refused" in browser** | Make sure Aera is running — check for the tray/menu bar icon |
+| **Bot says "Stopped" but won't start** | Try quitting and reopening the app |
+| **Forgot your PIN** | See "Resetting your PIN" below |
+
+### Resetting your PIN
+
+On the login page, click **"Forgot your PIN?"** and enter the email address linked to your bookmaker account. If the email matches, your PIN is cleared and you're taken to the setup wizard to choose a new one. All your settings and bet history are preserved.
+
+---
 
 ## Uninstalling
 
-Use **Add/Remove Programs** in Windows Settings. Your betting data in `%APPDATA%\BetMGM-Bot` is preserved — delete that folder manually if you want a clean removal.
+**Windows:** Go to **Settings → Apps → Installed Apps**, find Aera, and click **Uninstall**.
+
+**macOS:** Drag the app from Applications to the Trash.
+
+Your betting data is preserved after uninstalling. To remove everything, also delete the data folder (see paths above).
