@@ -1,4 +1,4 @@
-# Aera — Installation Guide
+# SharkEdge — Installation Guide
 
 ## What you need
 
@@ -11,8 +11,8 @@
 
 ### Windows
 
-1. Go to the [latest release](https://github.com/Dodge97/aera-releases/releases/latest)
-2. Download **`Aera-Setup.exe`**
+1. Go to the [latest release](https://github.com/Dodge97/sharkedge-releases/releases/latest)
+2. Download **`SharkEdge-Setup.exe`**
 3. Double-click the installer and follow the steps (Next → Install → Finish)
 4. The app starts automatically — a small icon appears in your **system tray** (bottom-right corner of your taskbar, near the clock)
 5. Your browser opens the setup wizard
@@ -21,10 +21,13 @@
 
 ### macOS
 
-1. Go to the [latest release](https://github.com/Dodge97/aera-releases/releases/latest)
-2. Download **`Aera.dmg`**
-3. Open the DMG file and drag the Aera app into your **Applications** folder
-4. Open Aera from your Applications folder
+1. Go to the [latest release](https://github.com/Dodge97/sharkedge-releases/releases/latest)
+2. Download the right version for your Mac:
+   - **Apple Silicon** (M1/M2/M3/M4): **`SharkEdge-...-Apple-Silicon.dmg`**
+   - **Intel**: **`SharkEdge-...-Intel.dmg`**
+   - **Not sure?** Click the Apple menu () → **About This Mac**. If it says "Chip: Apple M..." you have Apple Silicon. If it says "Processor: Intel..." you have Intel.
+3. Open the DMG file and drag the SharkEdge app into your **Applications** folder
+4. Open SharkEdge from your Applications folder
 5. If macOS shows a security warning, go to **System Settings → Privacy & Security** and click **Open Anyway**
 6. A menu bar icon appears (top-right of your screen) and your browser opens the setup wizard
 
@@ -32,34 +35,34 @@
 
 ## Step 2: Setup Wizard
 
-When you first open Aera, a setup wizard guides you through five steps:
+When you first open SharkEdge, a setup wizard guides you through five steps:
 
 1. **Welcome** — a quick overview of how the app works
 2. **User Agreement** — read and accept the terms of service
 3. **Bookmaker Login** — enter your bookmaker email and password. These are stored securely on your device and are never sent to our servers. You can use the **Test Connection** button to verify your credentials before continuing. If you have a referral code, you can enter it here too.
-4. **Bankroll** — enter your current bookmaker account balance. Aera uses this to automatically calculate the right bet size for each bet using a proven mathematical formula for long-term growth.
+4. **Bankroll** — enter your current bookmaker account balance. SharkEdge uses this to automatically calculate the right bet size for each bet using a proven mathematical formula for long-term growth.
 5. **PIN** — choose a code (at least 4 characters) to protect your dashboard
 
-After completing the wizard, Aera connects to our signal service automatically and starts running.
+After completing the wizard, SharkEdge connects to our signal service automatically and starts running.
 
 ---
 
 ## Step 3: Using the App
 
-Once set up, Aera runs quietly in the background. Here's what you need to know:
+Once set up, SharkEdge runs quietly in the background. Here's what you need to know:
 
-- **Starting Aera**: Right-click the tray/menu bar icon → **Start**, or open the Dashboard and click **Start**
+- **Starting SharkEdge**: Right-click the tray/menu bar icon → **Start**, or open the Dashboard and click **Start**
 - **Opening the Dashboard**: Right-click the icon → **Dashboard**, or go to `http://127.0.0.1:8095` in your browser
 - **What you'll see**: Your bets, profit, win rate, and charts — all updated in real time
 - **Settings**: Change your bankroll, max odds, or login credentials at any time
-- **How It Works**: A step-by-step explanation of Aera's process is available from the navigation bar
+- **How It Works**: A step-by-step explanation of SharkEdge's process is available from the navigation bar
 - **Billing**: View your fee balance, payment history, and referral earnings
 
 ### Pricing
 
 Free to start — your first €50 in profit is completely fee-free. After that, a 40% fee applies only on new profit above your previous peak (you never pay on losses).
 
-When your accumulated fee reaches €50, a **Pay Now** banner appears in your dashboard. You have 24 hours to pay via the secure Stripe checkout. If not paid within 24 hours, Aera pauses until the fee is settled. After payment, Aera resumes automatically.
+When your accumulated fee reaches €50, a **Pay Now** banner appears in your dashboard. You have 24 hours to pay via the secure Stripe checkout. If not paid within 24 hours, SharkEdge pauses until the fee is settled. After payment, SharkEdge resumes automatically.
 
 ---
 
@@ -79,13 +82,13 @@ When a new version is available, a yellow banner appears in your dashboard:
 |---------|----------|
 | **No tray icon visible** | **Windows:** Click the **^** arrow in your taskbar to find hidden icons. **Mac:** Look for the icon in the top-right menu bar. |
 | **Browser doesn't open automatically** | Open your browser and go to `http://127.0.0.1:8095` |
-| **"Connection refused" in browser** | Make sure Aera is running — check for the tray/menu bar icon. If you just installed, wait a few seconds and refresh the page. |
-| **Aera says "Stopped" but won't start** | Try quitting and reopening the app |
+| **"Connection refused" in browser** | Make sure SharkEdge is running — check for the tray/menu bar icon. If you just installed, wait a few seconds and refresh the page. |
+| **SharkEdge says "Stopped" but won't start** | Try quitting and reopening the app |
 | **Forgot your PIN** | See "Resetting your PIN" below |
 | **"Registration is currently closed"** | Contact the operator — new registrations may be temporarily paused. |
 | **Windows: "Windows protected your PC"** | This is Windows SmartScreen. Click **More info** → **Run anyway**. This warning appears because the app is new and not yet widely installed — it is safe to proceed. |
 | **Windows: "Error opening file"** | Save the installer to your Downloads folder first, then run it from there. Some browsers block running installers directly from the download bar. |
-| **macOS: "not supported on this Mac"** | Make sure you have the latest version. Update to the newest release from the [releases page](https://github.com/Dodge97/aera-releases/releases/latest). |
+| **macOS: "not supported on this Mac"** | Make sure you downloaded the correct version for your Mac (Apple Silicon or Intel). Check via Apple menu → About This Mac. |
 
 ### Resetting your PIN
 
@@ -95,11 +98,11 @@ On the login page, click **"Forgot your PIN?"** and enter the email address link
 
 ## Uninstalling
 
-**Windows:** Go to **Settings → Apps → Installed Apps**, find Aera, and click **Uninstall**.
+**Windows:** Go to **Settings → Apps → Installed Apps**, find SharkEdge, and click **Uninstall**.
 
 **macOS:** Drag the app from Applications to the Trash.
 
 Your betting data is preserved after uninstalling. To remove everything, also delete the data folder:
 
-- **Windows:** `%APPDATA%\Aera\`
-- **macOS:** `~/Library/Application Support/Aera/`
+- **Windows:** `%APPDATA%\SharkEdge\`
+- **macOS:** `~/Library/Application Support/SharkEdge/`
