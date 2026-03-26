@@ -22,10 +22,7 @@
 ### macOS
 
 1. Go to the [latest release](https://github.com/Dodge97/sharkedge-releases/releases/latest)
-2. Download the right version for your Mac:
-   - **Apple Silicon** (M1/M2/M3/M4): **`SharkEdge-...-Apple-Silicon.dmg`**
-   - **Intel**: **`SharkEdge-...-Intel.dmg`**
-   - **Not sure?** Click the Apple menu () → **About This Mac**. If it says "Chip: Apple M..." you have Apple Silicon. If it says "Processor: Intel..." you have Intel.
+2. Download **`SharkEdge-...-Apple-Silicon.dmg`**
 3. Open the DMG file and drag the SharkEdge app into your **Applications** folder
 4. Open SharkEdge from your Applications folder
 5. If macOS shows a security warning, go to **System Settings → Privacy & Security** and click **Open Anyway**
@@ -88,7 +85,7 @@ When a new version is available, a yellow banner appears in your dashboard:
 | **"Registration is currently closed"** | Contact the operator — new registrations may be temporarily paused. |
 | **Windows: "Windows protected your PC"** | This is Windows SmartScreen. Click **More info** → **Run anyway**. This warning appears because the app is new and not yet widely installed — it is safe to proceed. |
 | **Windows: "Error opening file"** | Save the installer to your Downloads folder first, then run it from there. Some browsers block running installers directly from the download bar. |
-| **macOS: "not supported on this Mac"** | Make sure you downloaded the correct version for your Mac (Apple Silicon or Intel). Check via Apple menu → About This Mac. |
+| **macOS: "not supported on this Mac"** | SharkEdge requires an Apple Silicon Mac (M1 or later). Intel Macs are not supported. Check via Apple menu → About This Mac. |
 
 ### Resetting your PIN
 
