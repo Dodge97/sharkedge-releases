@@ -85,7 +85,7 @@ When a new version is available, a yellow banner appears in your dashboard:
 | **"Registration is currently closed"** | Contact the operator — new registrations may be temporarily paused. |
 | **Windows: "Windows protected your PC"** | This is Windows SmartScreen. Click **More info** → **Run anyway**. This warning appears because the app is new and not yet widely installed — it is safe to proceed. |
 | **Windows: "Error opening file"** | Save the installer to your Downloads folder first, then run it from there. Some browsers block running installers directly from the download bar. |
-| **macOS: "not supported on this Mac"** | SharkEdge requires an Apple Silicon Mac (M1 or later). Intel Macs are not supported. Check via Apple menu → About This Mac. |
+| **macOS: "not supported on this Mac"** | Make sure you downloaded the correct version for your Mac (Apple Silicon or Intel). Check via Apple menu → About This Mac. |
 
 ### Resetting your PIN
 
