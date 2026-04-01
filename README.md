@@ -36,7 +36,7 @@ When you first open SharkEdge, a setup wizard guides you through five steps:
 
 1. **Welcome** — a quick overview of how the app works
 2. **User Agreement** — read and accept the terms of service
-3. **Bookmaker Login** — enter your bookmaker email and password. These are stored securely on your device and are never sent to our servers. You can use the **Test Connection** button to verify your credentials before continuing. If you have a referral code, you can enter it here too.
+3. **Bookmaker Login** — enter your bookmaker email and password. These are stored securely on your device and are never sent to our servers. You can use the **Test Connection** button to verify your credentials before continuing. If you have a referral code, you can enter it here too. **Don't have an account yet?** Type **demo** as your username to explore the dashboard first — you can connect your bookmaker later in Settings.
 4. **Bankroll** — enter your current bookmaker account balance. SharkEdge uses this to automatically calculate the right bet size for each bet using a proven mathematical formula for long-term growth.
 5. **PIN** — choose a code (at least 4 characters) to protect your dashboard
 
