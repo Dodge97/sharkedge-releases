@@ -22,7 +22,10 @@
 ### macOS
 
 1. Go to the [latest release](https://github.com/Dodge97/sharkedge-releases/releases/latest)
-2. Download **`SharkEdge-...-Apple-Silicon.dmg`**
+2. Download the right DMG for your Mac:
+   - **Apple Silicon** (M1/M2/M3/M4): `SharkEdge-...-Apple-Silicon.dmg`
+   - **Intel** (2017–2020 models): `SharkEdge-...-Intel.dmg`
+   - *Not sure?* Click **Apple menu → About This Mac**. If it says "Chip: Apple M…" it's Apple Silicon, otherwise it's Intel.
 3. Open the DMG file and drag the SharkEdge app into your **Applications** folder
 4. Open SharkEdge from your Applications folder
 5. If macOS shows a security warning, go to **System Settings → Privacy & Security** and click **Open Anyway**
