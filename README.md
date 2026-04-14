@@ -1,14 +1,24 @@
 # SharkEdge — Getting Started
 
-SharkEdge is an automated sports betting agent. It monitors sharp betting markets, detects when your bookmaker's odds are too high, and places bets for you — fully automated, 24/7.
+**Bet where the market is going — before the odds move.**
+
+SharkEdge finds profitable bets and places them for you — fully automated.
+
+## How it works
+
+1. **Scans the market** — monitors where sharp money is moving
+2. **Places bets for you** — logs into your bookmaker and places the bet automatically
+3. **Tracks everything** — results update live in your dashboard
+
+Want to understand the math behind it? Check **How it works** in your dashboard after setup.
+
+---
 
 ## What you need
 
-- A **Windows** PC (Windows 10 or later) or a **Mac** (macOS 12 or later)
+- A **Windows** PC (Windows 10+) or **Mac** (macOS 12+)
 - An account at one or more supported bookmakers:
-  - **BetMGM.nl**
-  - **Toto.nl**
-  - **BetCity.nl**
+  - **BetMGM.nl** · **Toto.nl** · **BetCity.nl** · **LeoVegas.nl**
 
 ---
 
@@ -45,35 +55,11 @@ When you first open SharkEdge, a setup wizard walks you through:
 
 After setup, go to **Settings** and connect at least one bookmaker account with your email and password. SharkEdge then starts placing bets automatically.
 
-> **Keep your computer on** while SharkEdge is running. It needs to stay active to monitor markets and place bets. You can close the browser window — SharkEdge runs in the background via the system tray icon.
-
 ---
 
-## Pricing
+## Keep it running
 
-SharkEdge is **free to start**. Your first **€50 in profit is free of charge** — no fees at all.
-
-After that, a **40% performance fee** applies only on **new profit**. You never pay fees on losses.
-
-### How it works
-
-The fee is based on a high-water mark — you only pay on profit that exceeds your previous peak. If your profit dips, the fee goes down too. You only pay again once you surpass your previous highest point.
-
-**Example:**
-
-| What happens | Your total profit | Fee (40% above €50 free) |
-|---|---|---|
-| You make €50 in profit | €50 | €0 — still within the free tier |
-| You make another €30 | €80 | €12 — 40% on the €30 above the free €50 |
-| You hit a losing streak, profit drops to €60 | €60 | €4 — fee drops automatically |
-| You recover back to €80 | €80 | €12 — same as before, back to your peak |
-| You push past to €100 | €100 | €20 — you only pay on the new €20 above your old peak |
-
-### When do I pay?
-
-When your accumulated fee reaches **€50**, a payment banner appears in your dashboard. You have **24 hours** to pay via the secure Stripe checkout. After payment, SharkEdge continues automatically. If not paid in time, SharkEdge pauses until the fee is settled.
-
-Fees always reflect your current profit — if you're in a losing streak, the fee decreases and may drop below the €50 threshold, in which case the payment banner disappears.
+SharkEdge needs to stay active to monitor markets and place bets. Keep your computer on and don't quit the app. You can close the browser window — SharkEdge runs in the background via the system tray icon.
 
 ---
 
@@ -84,6 +70,14 @@ When a new version is available, a banner appears in your dashboard:
 1. Click **Download**
 2. Close SharkEdge (right-click the tray/menu bar icon → **Quit**)
 3. Run the new installer — your settings and data are kept
+
+---
+
+## Pricing
+
+SharkEdge is **free to install and use**. Your first **€50 in profit is completely free**.
+
+After that, a **40% performance fee** applies on new profit only — you never pay on losses. Full pricing details are in your dashboard under **Billing**.
 
 ---
 
