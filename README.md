@@ -53,7 +53,9 @@ When you first open SharkEdge, a setup wizard walks you through:
 2. **Accept the terms** — review and agree to the terms of service
 3. **Choose a PIN** — protects your dashboard from others on your computer
 
-After setup, go to **Settings** and connect at least one bookmaker account with your email and password. SharkEdge then starts placing bets automatically.
+After setup, go to **Settings** and connect at least one bookmaker account — you'll need your bookmaker email/password and a starting bankroll (minimum €100). The bankroll tells SharkEdge how big each bet should be.
+
+When the connection is saved, click the **play button next to the SharkEdge logo** in the sidebar to start. SharkEdge then places bets automatically.
 
 ---
 
