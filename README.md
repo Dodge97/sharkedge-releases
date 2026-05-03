@@ -18,7 +18,7 @@ Want to understand the math behind it? Check **How it works** in your dashboard 
 
 - A **Windows** PC (Windows 10+) or **Mac** (macOS 12+)
 - An account at one or more supported bookmakers:
-  - **BetMGM.nl** · **Toto.nl** · **BetCity.nl** · **LeoVegas.nl**
+  - **BetMGM.nl** · **Toto.nl** · **BetCity.nl** · **LeoVegas.nl** · **Bingoal.nl**
 
 ---
 
@@ -65,6 +65,19 @@ SharkEdge needs to stay active to monitor markets and place bets. Keep your comp
 
 ---
 
+## Using SharkEdge on a VPS
+
+If you run SharkEdge on a cloud VPS (Hetzner, OVH, ...), bookmakers may flag the account because the IP belongs to a datacenter range. Route bookmaker traffic through a Netherlands residential proxy:
+
+1. Buy a static residential ISP proxy in the Netherlands (Decodo's "Static Residential" plan is recommended — about €2.50/month for one dedicated IP, unlimited bandwidth)
+2. Open SharkEdge → **Settings → Connection**
+3. Paste the proxy URL (looks like `http://user:pass@host:port`)
+4. Click **Connect** — confirm the response shows "Netherlands"
+
+That's it. All bookmaker traffic now routes through your NL proxy. SharkEdge will refuse to start if the proxy ever becomes unreachable; you'll get a modal pointing you back to **Settings → Connection** to fix or remove the proxy URL.
+
+---
+
 ## Updates
 
 When a new version is available, a banner appears in your dashboard:
@@ -94,6 +107,29 @@ After that, a **40% performance fee** applies on new profit only — you never p
 | **Forgot your PIN** | On the login page, click **Forgot your PIN?** and enter the email you used during setup. Your PIN resets and all data is preserved. |
 | **"Registration is currently closed"** | Contact the operator — new registrations may be temporarily paused. |
 | **macOS: "not supported on this Mac"** | Make sure you downloaded the correct version (Apple Silicon or Intel). |
+
+---
+
+## Running on a VPS (advanced)
+
+Run SharkEdge 24/7 without keeping your own PC on. You'll need a Windows VPS and a Dutch residential proxy. Expect ~€8/month for the VPS and ~€25/month for the proxy.
+
+**1. Buy an OVHcloud VPS** — plan **VPS-1** with Windows Server Desktop (4 vCore, 8GB RAM, 75GB NVMe), Europe region.
+
+**2. Buy a Decodo proxy** — **Static Residential (ISP)**, location **Netherlands**, 3 IPs, unlimited traffic. Decodo gives you a host, port, username, and password.
+
+**3. Log into the VPS** — on your own PC, open **Remote Desktop Connection**, enter the VPS IP from OVHcloud, and sign in with the OVH credentials. Then install SharkEdge inside the VPS using the Windows steps above.
+
+**4. Set the proxy in SharkEdge** (inside the VPS, not your own PC):
+
+1. Open **Settings → Connection** in SharkEdge
+2. Paste the proxy URL as `http://USERNAME:PASSWORD@HOST:PORT`
+   *Example:* `http://nl-user-1:s3cret@gate.decodo.com:7000`
+3. Enter your SharkEdge PIN and click **Connect**
+
+SharkEdge tests the proxy and shows the detected **IP**, **country**, and **ISP**. You should see a Dutch IP and a residential ISP — not OVH. If the test fails, double-check the URL and that the proxy is activated in your Decodo dashboard.
+
+> Do **not** set a proxy in Windows Settings — SharkEdge ignores it.
 
 ---
 
